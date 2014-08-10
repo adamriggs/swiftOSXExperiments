@@ -14,12 +14,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet var subreddit: NSTextField
     @IBOutlet var jsonTable: NSClipView
     
+    
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         // Insert code here to initialize your application
     }
 
     func applicationWillTerminate(aNotification: NSNotification?) {
         // Insert code here to tear down your application
+    }
+    
+    func getRedditJSON(sub:String){
+        
     }
 
     @IBAction func getJSON(sender: AnyObject) {
