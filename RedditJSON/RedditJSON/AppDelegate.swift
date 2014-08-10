@@ -11,8 +11,9 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
                             
     @IBOutlet var window: NSWindow
-
-
+    @IBOutlet var subreddit: NSTextField
+    @IBOutlet var jsonTable: NSClipView
+    
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         // Insert code here to initialize your application
     }
@@ -21,6 +22,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
+    @IBAction func getJSON(sender: AnyObject) {
+        
+    }
 
 }
 
