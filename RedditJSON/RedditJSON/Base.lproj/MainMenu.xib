@@ -13,7 +13,7 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="RedditJSON" customModuleProvider="target">
             <connections>
-                <outlet property="jsonTable" destination="OK6-5F-707" id="yZm-46-Kzc"/>
+                <outlet property="jsonTable" destination="suY-kb-vUS" id="dvc-ll-gTy"/>
                 <outlet property="subreddit" destination="f1k-0s-t8U" id="xeu-zd-Jbk"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -762,7 +762,7 @@
                     </scrollView>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="-24" y="349.5"/>
+            <point key="canvasLocation" x="-40" y="333.5"/>
         </window>
         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="wdV-mS-Vmq">
             <rect key="frame" x="0.0" y="0.0" width="42" height="17"/>
