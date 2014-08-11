@@ -28,6 +28,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func getRedditJSON(reqString:String){
         let mySession = NSURLSession.sharedSession()
         let url:NSURL = NSURL(string:reqString)
+        println("1")
         let networkTask = mySession.dataTaskWithURL(url, completionHandler : {data, response, error -> Void in
             var err:NSError?
             var theJSON = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSMutableDictionary
@@ -37,7 +38,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 self.jsonTable!.reloadData()
             })
         })
+        println("2")
         networkTask.resume()
+        println("3")
     }
 
     @IBAction func getJSON(sender: AnyObject) {
@@ -48,7 +51,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         req += ".json"
-        
+        println("req=="+req)
         getRedditJSON(req)
     }
 
